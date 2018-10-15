@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Libre+Baskerville|Roboto');
+body {
+margin: 0;
+padding: 0 ;
+overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+h1{
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    color: #222221;
+}
+.tex{
+    font-size: 25px;
+    color: rgb(83, 81, 81);
+}
+
+
+.entete{
+  content:'';
+  width:100%;
+  height:100vh;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background:url('../image/textew.png');
+  background-size:cover;
+  background-attachment: fixed;
+  z-index:-2;
+
+}
+
+.typeWrite,h1{
+ text-align: center;
+  
+}
+
+
+.typeWrite{
+ color:black;
+ font-size: 20px;
+ font-family:'Libre Baskerville', serif;
+}
+#type{
+overflow: hidden;
+
+
+}
+
+.header{
+   width: 100px;
+   height:100%;
+   top: 0;
+   display: inline; 
+   text-align: center;
+   
+  
+}
+
+
+.header li{
+    list-style:none;
+    display: inline; 
+    margin-right: 10px;
+    font-weight: bold;
+   
+}
+
+ li a {
+    color:#fff;
+    text-decoration:none;
+    font-family:'Roboto', sans-serif;
+    font-size: 1.5em;
+  
+}
+
+
+
+.fixed {
+position: fixed;
+top: 0;
+background:#024959;
+height:3em;
+transition: 1s;
+z-index: 1;
+
+
+}
+
+.badget{
+    width: 250px;
+    height: 400px;
+    background-color:rgb(216, 24, 24);
+    overflow: hidden;
+    float: right;
+    margin-top:125px;
+    opacity: 0.9;
+    border-radius: 1.5%;
+}
+
+.badi{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    align-content: center;
+    margin-left: 70px;
+    margin-top: 18px;
+    border:solid  #024959;
+    
+}
+.ita{
+    margin-top:15px;
+    text-align:center;
+}
+.pros{
+    width:100%;
+    height: 100vh;
+    background-color: rgb(235, 233, 231);
+    margin-top: 535px;
+}
+
+.mosaiq{
+    padding: 0.5%;
+    flex:1 1 80%; 
+    min-height:100vh;
+   
+}
+.grid{
+    display:grid;
+    height:100%;
+    grid-template-rows:repeat(8,1fr); 
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+}
+.image-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+ 
+}
+.image-item.small{
+    grid-row: span 12; 
+    grid-column: span 1;
+    background-image: url('../image/img1.png');
+    background-repeat: no-repeat;
+    
+}
+
+.image-item.meduim{
+    grid-row: span 12; 
+    grid-column: span 1;
+     background-image: url('../image/img4.png');
+     background-repeat: no-repeat;
+}
+
+.image-item.wide{
+    grid-row: span 13; 
+    grid-column: span 2;
+     background-image: url('../image/img5.png');
+     background-repeat: no-repeat;
+}
+.image-item.tall{
+    grid-row: span 25; 
+    grid-column: span 2;
+    background-image: url('../image/img3.png');
+    background-repeat: no-repeat;
+} 
+.tort{
+    font-size: 32px;
+    color: #fff;
+    text-shadow:1px 2px 0 #242424 ;
+}
+
+.end{
+    widows: 100%;
+    height: 3em;
+    background-color: #222221;
+    margin-top:15px;
+}
+
+/*
+
+.piste{
+    widows:100%;
+    height: 100vh;
+    background-color:cadetblue;
+    margin-top: 0px;
+}
+
+.brun{
+    widows:100%;
+    height: 100vh;
+    background-color:chartreuse;
+    margin-top: opx;
+}
+.petu{
+    widows:100%;
+    height: 100vh;
+    background-color:navy;
+    
+}
+
+
+*/
+
+
+
+
+@media screen and (max-width:1980px ) {
+
+.badget{
+    width: 250px;
+    height: 400px;
+    background-color:#ccc;
+    overflow: hidden;
+    float: right;
+    margin-top: 450px;
+    opacity: 0.9;
+    border-radius:1.5%;
+}
+.header  {
+        width:100%;
+        height:7%;
+        margin:0;
+        position: fixed;
+        transition: 1s;
+      
+    }
+.pros{
+    widows:100%;
+    height: 100vh;
+    background-color: rgb(245, 239, 230);
+    margin-top: 970px;
+    
+ 
+}
+
+}
+
+@media screen and (max-width:1280px ) {
+
+    body{
+        
+    }
+    header nav {
+        width:100%;
+        height:9%;
+        left:100%;
+        margin:0;
+        position: fixed;
+        transition: 1s;
+    }
+
+    header nav ul li {
+        display:block;
+        float:none;
+        border-bottom:1px solid rgba(255,255,255, .3);
+    }
+
+    .menu_bar {
+        display:block;
+        width:100%;
+        background:#ccc;
+    }
+
+
+
+    .menu_bar span {
+        float:right;
+        font-size:40px;
+    }
+    .badget{
+    width: 200px;
+    height: 400px;
+    background-color:white;
+    overflow: hidden;
+    float: right;
+    opacity: 0.9;
+    border-radius: 1%;
+    margin-top:275px;
+}
+ .pros{
+    widows:100%;
+    height:100vh;
+    background-color: rgb(247, 232, 213);
+    margin-top:657px;
+   
+ 
+}
